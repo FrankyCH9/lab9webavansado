@@ -1,0 +1,10 @@
+<h2>Lista de Tareas</h2>
+
+<ul>
+  <li *ngFor="let tarea of listaTareas">{{ tarea }}</li>
+</ul>
+
+<form (submit)="agregarTarea(nuevaTarea.value); limpiarCampoTexto(nuevaTarea)">
+  <input type="text" #nuevaTarea placeholder="Ingrese una tarea">
+  <button type="submit">Agregar tarea</button>
+</form>

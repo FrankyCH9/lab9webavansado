@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  li .tarea-checkbox {
+    margin-right: 10px;
+  }
+  
+  li .tarea-texto {
+    flex: 1;
+  }
+  
+  .tarea-completada .tarea-texto {
+    text-decoration: line-through;
+    color: #888888;
+  }
+  
+  .tarea-boton-eliminar {
+    background-color: #FF3333;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
